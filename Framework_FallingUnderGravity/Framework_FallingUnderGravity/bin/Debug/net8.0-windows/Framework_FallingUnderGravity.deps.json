@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Framework_FallingUnderGravity/1.0.0": {
+        "runtime": {
+          "Framework_FallingUnderGravity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Framework_FallingUnderGravity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
