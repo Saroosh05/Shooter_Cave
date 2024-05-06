@@ -33,18 +33,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Collisions">
+      <HintPath>..\..\Collisions\Collisions\bin\Debug\Collisions.dll</HintPath>
+    </Reference>
     <Reference Include="EZInput, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll</HintPath>
     </Reference>
     <Reference Include="Framework_FallingUnderGravity">
       <HintPath>..\..\Framework_FallingUnderGravity\Framework_FallingUnderGravity\bin\Debug\net8.0-windows\Framework_FallingUnderGravity.dll</HintPath>
     </Reference>
+    <Reference Include="GameFramework">
+      <HintPath>..\..\GameFramework\GameFramework\bin\Debug\GameFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="IMovement">
+      <HintPath>..\..\IMovement\IMovement\bin\Debug\IMovement.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -58,21 +68,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\DiagonalEnemy.cs" />
-    <Compile Include="BL\Enemy.cs" />
-    <Compile Include="BL\HorizontalEnemy.cs" />
-    <Compile Include="BL\Player.cs" />
-    <Compile Include="BL\Shot.cs" />
-    <Compile Include="BL\VerticalEnemy.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="UI\GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GameWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GameWin.Designer.cs">
+      <DependentUpon>GameWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -85,6 +107,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UI\GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GameWin.resx">
+      <DependentUpon>GameWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,9 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bl11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\gm.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gm1.png" />
@@ -155,6 +183,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shot-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pR-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameOver-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\score-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hehe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

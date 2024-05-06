@@ -1,0 +1,6 @@
+D:\Saroosh(ME)\uniwork\2nd-Semester\Game\new\IMovement\IMovement\bin\Debug\IMovement.dll
+D:\Saroosh(ME)\uniwork\2nd-Semester\Game\new\IMovement\IMovement\bin\Debug\IMovement.pdb
+D:\Saroosh(ME)\uniwork\2nd-Semester\Game\new\IMovement\IMovement\obj\Debug\IMovement.csproj.AssemblyReference.cache
+D:\Saroosh(ME)\uniwork\2nd-Semester\Game\new\IMovement\IMovement\obj\Debug\IMovement.csproj.CoreCompileInputs.cache
+D:\Saroosh(ME)\uniwork\2nd-Semester\Game\new\IMovement\IMovement\obj\Debug\IMovement.dll
+D:\Saroosh(ME)\uniwork\2nd-Semester\Game\new\IMovement\IMovement\obj\Debug\IMovement.pdb
